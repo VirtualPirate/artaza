@@ -1,0 +1,48 @@
+.footer_contact_wrapper {
+  padding: 2vw 5vw;
+}
+
+.footer_contact {
+  font-size: 2vw;
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+
+  color: #dfe6e9;
+}
+
+.footer_contact_phone {
+  border-bottom: 0.1vw solid white;
+}
+
+.footer_contact_logo {
+  width: 2vw;
+  fill: #636e72;
+}
+
+@media (max-width: 1000px) {
+  .footer_contact {
+    font-size: 3vw;
+    gap: 2vw;
+  }
+
+  .footer_contact_logo {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_contact_wrapper {
+    padding: 3vw 8vw;
+  }
+
+  .footer_contact_logo {
+    width: 4vw;
+  }
+
+  .footer_contact {
+    font-size: 4vw;
+  }
+}

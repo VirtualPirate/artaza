@@ -1,0 +1,15 @@
+.speciality_section_svg {
+  width: 34vw;
+}
+
+@media (max-width: 1200px) {
+  .speciality_section_svg {
+    width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .speciality_section_svg {
+    width: 80vw;
+  }
+}

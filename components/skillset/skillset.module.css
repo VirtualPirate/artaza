@@ -1,0 +1,57 @@
+.skillset {
+  padding-bottom: 2vw;
+  margin: 0 5vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.skillset_heading {
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+
+  position: absolute;
+  top: 5vw;
+  left: 20vw;
+}
+
+.skillset_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 3vw 0;
+}
+
+@media (max-width: 1000px) {
+  .skillset_heading {
+    position: static;
+    font-size: 4vw;
+  }
+
+  .skillset_heading span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skillset {
+    padding: 0 0 8vw 0;
+    gap: 0;
+  }
+  .skillset_heading {
+    position: static;
+    font-size: 5vw;
+  }
+  .skillset_content_wrapper {
+    padding-top: 3vw;
+  }
+  .skillset_content {
+    gap: 2vw;
+  }
+}

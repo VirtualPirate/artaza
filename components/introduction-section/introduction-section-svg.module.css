@@ -1,0 +1,16 @@
+.intro_section_img {
+  width: 34vw;
+  /* transform: translateY(-2vw); */
+}
+
+@media (max-width: 1200px) {
+  .intro_section_img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro_section_img {
+    width: 80vw;
+  }
+}

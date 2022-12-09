@@ -1,0 +1,62 @@
+.search_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3px;
+  margin-bottom: 5vw;
+}
+
+.search_bar > form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: max(300px, 30vw);
+  height: max(40px, 4vw);
+
+  border-radius: 0.3vw;
+  padding: 1vw 2vw;
+  outline: 0.1vw solid #aaa;
+
+  cursor: text;
+}
+
+.search_bar form input {
+  width: max(250px, 25vw);
+  height: min(30px, 3vw);
+  outline: none;
+  border: none;
+
+  font-size: max(1vw, 15px);
+}
+
+.search_bar button {
+  outline: none;
+  border: none;
+
+  height: max(4vw, 40px);
+  width: max(4vw, 40px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  outline: 0.1vw solid #aaa;
+  border-radius: 0.3vw;
+  background-color: #e8f4ff;
+}
+
+.search_bar button img {
+  /* height: 2vw; */
+  /* width: 2vw; */
+
+  height: max(2vw, 20px);
+  width: max(2vw, 20px);
+}
+
+.blog_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
