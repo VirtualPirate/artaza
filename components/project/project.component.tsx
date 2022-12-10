@@ -47,10 +47,11 @@ export default function Project({
 
         <div className={styles.created_using}>
           <span>CREATED USING: </span>
-          {createdUsing.map((skill) => (
+          {createdUsing.map((skill, index) => (
             <img
               className={styles.created_using_logo}
               src={`./graphics/skillset/${skill}.svg`}
+              key={index}
             />
           ))}
         </div>

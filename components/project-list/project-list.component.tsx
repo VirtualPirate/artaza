@@ -10,8 +10,8 @@ export default function ProjectList() {
       <h1 className={styles.projects_heading}>PROJECTS</h1>
       <div className={styles.projects_content_wrapper}>
         <div className={styles.projects_content}>
-          {projects.map((project) => (
-            <Project {...project}></Project>
+          {projects.map((project, index) => (
+            <Project {...project} key={index}></Project>
           ))}
         </div>
       </div>

@@ -1,15 +1,20 @@
-import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { useState } from "react";
+import { useSwipeable } from "react-swipeable";
+import { useRef, useState } from "react";
 import Link from "next/link";
 
 import styles from "./mobile-nav.module.css";
 
 export default function MobileNav() {
   const [sideNavState, setSideNavState] = useState<boolean>(false);
+  const sideNavRef = useRef<HTMLDivElement>(null);
 
   function toggleSideNavState() {
     setSideNavState(!sideNavState);
   }
+
+  const swipeHandler = useSwipeable({
+    onSwipedLeft: (e) => toggleSideNavState(),
+  });
 
   return (
     <>
@@ -29,7 +34,10 @@ export default function MobileNav() {
         </button>
       </div>
 
-      <nav className={`${styles.side_nav} ${sideNavState ? styles.show : ""}`}>
+      <nav
+        className={`${styles.side_nav} ${sideNavState ? styles.show : ""}`}
+        {...swipeHandler}
+      >
         <div className={styles.side_nav_sticky}>
           <button onClick={toggleSideNavState}>
             <img
