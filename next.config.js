@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  basePath: "/artaza/",
+  basePath: "/artaza",
   assetPrefix: "/artaza/",
 };
 
