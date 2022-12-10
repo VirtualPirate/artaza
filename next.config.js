@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   basePath: "/artaza",
-  assetPrefix: "/artaza/",
+  assetPrefix: "/artaza",
 };
 
 module.exports = nextConfig;
