@@ -54,7 +54,7 @@ export default function PostPage({
           <div className={styles.blog_page}>
             <div className={styles.post_info}>
               <img
-                src={`.${cover_image}`}
+                src={cover_image}
                 alt="blog page cover"
                 className={styles.cover_image}
               />
