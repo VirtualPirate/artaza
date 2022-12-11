@@ -7,7 +7,7 @@ export default function DeskNav() {
       <img src="./graphics/nav.svg" className={styles.nav_svg} alt="" />
       <div className={styles.nav_items_wrapper}>
         <div className={styles.nav_items}>
-          <Link href="/" className={styles.nav_item_link}>
+          <Link href="." className={styles.nav_item_link}>
             <div className={styles.nav_item}>Home</div>
           </Link>
           <Link href="/skills" className={styles.nav_item_link}>

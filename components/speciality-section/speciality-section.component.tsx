@@ -12,7 +12,7 @@ export default function SpecialitySection() {
         <p className="right-slide-anim transition-delay-200">
           Not only do I create websites but websites which looks excellent in
           various devices and with professional looking
-          <span>Animations</span> and <span>Responsiveness</span> . Creating
+          <span> Animations</span> and <span>Responsiveness</span> . Creating
           professional level front designs to extensive backend developement,
           using <span>REST</span>, <span>GraphQL</span> and <span>SQL</span>.
         </p>
