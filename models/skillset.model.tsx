@@ -8,6 +8,7 @@ const skills: Array<SkillType> = [
   { name: "HTML 5", logo: "html.svg", skillLevel: 4 },
   { name: "CSS 3", logo: "css.svg", skillLevel: 4 },
   { name: "Javascript", logo: "javascript.svg", skillLevel: 4 },
+  { name: "Typescript", logo: "typescript.svg", skillLevel: 3 },
   { name: "ReactJS", logo: "reactjs.svg", skillLevel: 3 },
   { name: "WebAssembly", logo: "webassembly.svg", skillLevel: 3 },
   { name: "Web Components", logo: "webcomponent.svg", skillLevel: 4 },
