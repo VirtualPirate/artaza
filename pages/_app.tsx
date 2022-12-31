@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <base href={config.basePath + "/"} />
+        <title> Artaza Portfolio </title>
       </Head>
       <Component {...pageProps} />
     </>
