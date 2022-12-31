@@ -14,53 +14,53 @@ export default function Project({
   deployLink,
   createdUsing,
 }: ProjectProps) {
-  const link = codeLink !== "" ? codeLink : deployLink;
+  const link = deployLink !== "" ? deployLink : codeLink;
 
   return (
-    <Link href={link}>
-      <div className={styles.project}>
-        <div className={styles.project_info}>
+    <div className={styles.project}>
+      <div className={styles.project_info}>
+        <Link href={link}>
           <div className={styles.project_name}>{name}</div>
-          <div className={styles.project_links}>
-            {codeLink !== "" ? (
-              <>
-                <span className={styles.project_code_link_title}>
-                  Code Link:{" "}
-                </span>
-                <a className={styles.project_code_link} href={codeLink}>
-                  {codeLink}
-                </a>
-              </>
-            ) : (
-              ""
-            )}
+        </Link>
+        <div className={styles.project_links}>
+          {codeLink !== "" ? (
+            <>
+              <span className={styles.project_code_link_title}>
+                Code Link:{" "}
+              </span>
+              <Link className={styles.project_code_link} href={codeLink}>
+                {codeLink}
+              </Link>
+            </>
+          ) : (
+            ""
+          )}
 
-            {deployLink !== "" ? (
-              <>
-                <span className={styles.project_deploy_link_title}>
-                  Deploy Link:
-                </span>
-                <a className={styles.project_deploy_link} href={deployLink}>
-                  {deployLink}
-                </a>
-              </>
-            ) : (
-              ""
-            )}
-          </div>
+          {deployLink !== "" ? (
+            <>
+              <span className={styles.project_deploy_link_title}>
+                Deploy Link:
+              </span>
+              <Link className={styles.project_deploy_link} href={deployLink}>
+                {deployLink}
+              </Link>
+            </>
+          ) : (
+            ""
+          )}
+        </div>
 
-          <div className={styles.created_using}>
-            <span>CREATED USING: </span>
-            {createdUsing.map((skill, index) => (
-              <img
-                className={styles.created_using_logo}
-                src={`./graphics/skillset/${skill}.svg`}
-                key={index}
-              />
-            ))}
-          </div>
+        <div className={styles.created_using}>
+          <span>CREATED USING: </span>
+          {createdUsing.map((skill, index) => (
+            <img
+              className={styles.created_using_logo}
+              src={`./graphics/skillset/${skill}.svg`}
+              key={index}
+            />
+          ))}
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
