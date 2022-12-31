@@ -14,7 +14,7 @@ export default function Project({
   deployLink,
   createdUsing,
 }: ProjectProps) {
-  const link = codeLink === "" ? codeLink : deployLink;
+  const link = codeLink === "" ? deployLink : codeLink;
 
   return (
     <Link href={link}>
