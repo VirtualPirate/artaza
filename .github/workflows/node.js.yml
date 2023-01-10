@@ -28,7 +28,7 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
         env:
-          NEXT_PUBLIC_BASE_PATH: artaza
+          NEXT_PUBLIC_BASE_PATH: /artaza
       - run: npm run export
       - run: touch ./out/.nojekyll
 
