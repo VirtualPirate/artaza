@@ -37,8 +37,8 @@ const projects: Array<ProjectType> = [
 
   {
     name: "AZCreation (CLIENT PAGE)",
-    codeLink: "",
-    deployLink: "https://frolicking-gnome-d01d8b.netlify.app/",
+    codeLink: "https://github.com/VirtualPirate/azcreation",
+    deployLink: "https://azcreation.pages.dev/",
     createdUsing: ["html", "css", "javascript"],
   },
 ];
