@@ -39,7 +39,7 @@ const projects: Array<ProjectType> = [
     name: "AZCreation (CLIENT PAGE)",
     codeLink: "https://github.com/VirtualPirate/azcreation",
     deployLink: "https://azcreation.pages.dev/",
-    createdUsing: ["html", "css", "javascript"],
+    createdUsing: ["html", "css", "typescript", "nextjs"],
   },
 ];
 
