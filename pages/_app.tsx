@@ -4,7 +4,7 @@ import "../styles/speciality-section-svg.styles.css";
 
 import Head from "next/head";
 
-const config = require("../next.config");
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 import type { AppProps } from "next/app";
 
@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <base href={config.basePath + "/"} />
+        <base href={basePath + "/"} />
         <title> Artaza Portfolio </title>
       </Head>
       <Component {...pageProps} />
