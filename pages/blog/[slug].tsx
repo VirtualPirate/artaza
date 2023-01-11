@@ -1,27 +1,20 @@
+import Prism from "prismjs";
 import fs from "fs";
 import path from "path";
 import { marked } from "marked";
 import matter from "gray-matter";
-import hljs from "highlight.js";
 
-import Script from "next/script";
 import { Roboto } from "@next/font/google";
-import Nav from "../../components/nav/nav.component";
 
 import styles from "./blog.module.css";
+import "prismjs/themes/prism-okaidia.min.css";
 
 import type { FrontmatterType } from ".";
+import { useEffect } from "react";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
-});
-
-marked.setOptions({
-  highlight: function (code, lang) {
-    const language = hljs.getLanguage(lang) ? lang : "plaintext";
-    return hljs.highlight(code, { language }).value;
-  },
 });
 
 type PostPageProps = {
@@ -35,20 +28,16 @@ export default function PostPage({
   content,
   slug,
 }: PostPageProps) {
+  require("prismjs/components/prism-c");
+  require("prismjs/components/prism-cpp");
+  require("prismjs/components/prism-cmake");
+
+  useEffect(() => {
+    Prism.plugins;
+    Prism.highlightAll();
+  }, []);
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
-      ></link>
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/go.min.js"
-        strategy="lazyOnload"
-      />
       <main className={roboto.className}>
         <div className={styles.blog_page_wrapper}>
           <div className={styles.blog_page}>

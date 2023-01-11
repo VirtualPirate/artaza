@@ -32,7 +32,7 @@ In this article, we will talk about, how to setup a **CMake** to compile a C++ p
 
 ## Creating C++ file
 
-```c++
+```cpp
 // cpp/main.cpp
 
 extern "C" {
@@ -45,7 +45,7 @@ extern "C" {
 
 ## Creating the `CMakeLists.txt` file
 
-```python
+```cmake
 project(Wasm) # PROJECT NAME
 cmake_minimum_required(VERSION 3.16.3)
 
