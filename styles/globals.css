@@ -70,8 +70,8 @@ h6 {
 
 p {
   font-size: 18px;
-  line-height: 2;
-  color: #555;
+  line-height: 1.6;
+  /* color: #555; */
 }
 
 pre {
@@ -80,8 +80,11 @@ pre {
   overflow: auto;
 }
 code {
-  font-size: 16px;
-  font-family: Consolas;
+  font-size: 17px;
+  padding: 5px;
+  border-radius: 5px;
+  /* font-family: Consolas; */
+  background-color: #e3e6e8;
   overflow: auto;
 }
 

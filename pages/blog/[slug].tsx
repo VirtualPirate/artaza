@@ -7,7 +7,9 @@ import matter from "gray-matter";
 import { Roboto } from "@next/font/google";
 
 import styles from "./blog.module.css";
-import "prismjs/themes/prism-okaidia.min.css";
+import "prismjs/themes/prism-tomorrow.min.css";
+
+require("prismjs/plugins/normalize-whitespace/prism-normalize-whitespace");
 
 import type { FrontmatterType } from ".";
 import { useEffect } from "react";
@@ -31,6 +33,8 @@ export default function PostPage({
   require("prismjs/components/prism-c");
   require("prismjs/components/prism-cpp");
   require("prismjs/components/prism-cmake");
+  require("prismjs/components/prism-bash");
+  require("prismjs/components/prism-jsx");
 
   useEffect(() => {
     Prism.plugins;

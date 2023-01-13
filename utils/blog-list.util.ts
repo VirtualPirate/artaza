@@ -5,7 +5,11 @@ import matter from "gray-matter";
 export function getMarkdownFiles() {
   const files = fs.readdirSync(path.join("blogs"));
 
-  const posts = files.map((filename) => {
+  const ready_files = files.filter((file: string) => {
+    return file[0] !== "-";
+  });
+
+  const posts = ready_files.map((filename) => {
     const slug = filename.replace(".md", "");
 
     const markdownWithMeta = fs.readFileSync(
