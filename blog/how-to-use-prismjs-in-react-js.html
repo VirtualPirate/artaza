@@ -1,0 +1,95 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><base href="/artaza/"/><title> Artaza Portfolio </title><meta name="next-head-count" content="4"/><link rel="preload" href="/artaza/_next/static/css/340d12a817a60517.css" as="style"/><link rel="stylesheet" href="/artaza/_next/static/css/340d12a817a60517.css" data-n-g=""/><link rel="preload" href="/artaza/_next/static/css/57a6330d9078fbeb.css" as="style"/><link rel="stylesheet" href="/artaza/_next/static/css/57a6330d9078fbeb.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/artaza/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/artaza/_next/static/chunks/webpack-26ff29c794a217a0.js" defer=""></script><script src="/artaza/_next/static/chunks/framework-3b5a00d5d7e8d93b.js" defer=""></script><script src="/artaza/_next/static/chunks/main-97dc0a10f0946b99.js" defer=""></script><script src="/artaza/_next/static/chunks/pages/_app-ca86577cd5647190.js" defer=""></script><script src="/artaza/_next/static/chunks/691-bb411d4d0f430f76.js" defer=""></script><script src="/artaza/_next/static/chunks/pages/blog/%5Bslug%5D-719e18e496b9ca1e.js" defer=""></script><script src="/artaza/_next/static/paAti74gkAgpi7pyziL7j/_buildManifest.js" defer=""></script><script src="/artaza/_next/static/paAti74gkAgpi7pyziL7j/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main class="__className_198ee5"><div class="blog_blog_page_wrapper__FyeSS"><div class="blog_blog_page__Dpz4Y"><div class="blog_post_info__RFq7N"><img src="./graphics/blog-cover/prismjs.webp" alt="blog page cover" class="blog_cover_image__ijGpS"/><h1 class="blog_title__dLTYQ">How to use PrismJS in ReactJS</h1><div class="blog_date__YKU3Y">January 14, 2023</div><div class="blog_tags__1olfU"><span> <!-- -->web<!-- --> </span><span> <!-- -->react<!-- --> </span></div></div><div class="blog_post_content__VVCpL"><h2 id="introduction">Introduction</h2>
+<p>Prism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. It’s used in millions of websites, including some of those you visit daily</p>
+<p><em>For more info on PrismJS <a href="https://prismjs.com/">Click Here</a></em></p>
+<h2 id="install-prismjs-using-npm">Install PrismJS using npm</h2>
+<p>I assume that your React project is configured correctly. After your React
+project is up and running. Install PrismJS on the terminal.</p>
+<pre><code class="language-bash">npm i prismjs
+</code></pre>
+<h2 id="after-we-have-installed-prismjs-we-will-import">After we have installed prismjs we will import</h2>
+<ul>
+<li>Language Support</li>
+<li>Themes</li>
+<li>Plugins</li>
+</ul>
+<h2 id="import-prism-and-theme-in-your-project">Import Prism and Theme in your project</h2>
+<p>Here we are importing <code>PrismJS</code> and the <code>Theme</code>.</p>
+<pre><code class="language-javascript">import Prism from &quot;prismjs&quot;; // Prism
+import &quot;prismjs/themes/prism-okaidia.min.css&quot;; // Import theme
+</code></pre>
+<p>Themes are stored in the <code>prismjs/themes/</code> directory. Here are all
+the possible themes supported by PrismJS.</p>
+<ul>
+<li>prism-coy.min.css</li>
+<li>prism-dark.min.css</li>
+<li>prism-funky.min.css</li>
+<li>prism-okaidia.min.css</li>
+<li>prism-solarizedlight.min.css</li>
+<li>prism-tomorrow.min.css</li>
+<li>prism-twilight.min.css</li>
+</ul>
+<h2 id="add-language-support-and-plugins">Add language support and Plugins</h2>
+<p>In order to enable syntax highlighting we need the language from the
+<code>&#39;prismjs/componenent/&#39;</code> directory. In this project we are going to highlight C++ code.</p>
+<p>We are going to import plugins from the <code>prismjs/themes</code> directory.</p>
+<p>And we are going to use the <code>normalize-whitespace</code> plugin to
+remove all leading and trailing spaces in the code.</p>
+<pre><code class="language-javascript">// C is required for C++ highlighting to work
+require(&quot;prismjs/components/prism-c&quot;);
+
+// Add language support for C++
+require(&quot;prismjs/components/prism-cpp&quot;);
+
+// To remove extra white spaces
+require(&quot;prismjs/plugins/normalize-whitespace/prism-normalize-whitespace&quot;);
+</code></pre>
+<p>To see which plugins are supported in PrismJS <a href="https://prismjs.com/#plugins">Click Here</a></p>
+<h2 id="how-to-put-code-in-html">How to put code in HTML</h2>
+<p>After we have imported all the required files. We are place your code inside the <code>pre &gt; code</code> tags, like the example below. Here, <code>xxxx</code> is the name of the language</p>
+<p>To see all the languages supported by PrismJS <a href="https://prismjs.com/#supported-languages">Click Here</a></p>
+<pre><code class="language-html">&lt;pre&gt;
+  &lt;code className=&quot;language-xxxx&quot;&gt;
+    &lt;!-- Your code here --&gt;
+  &lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
+<p>But, wait. It is not over yet, the syntax highlighting will not work yet now.
+We have to call the <code>Prism.highlighAll()</code> function to highlight our code
+after rendering the html.</p>
+<h2 id="final-code-example">Final Code Example</h2>
+<p>Now the final code. Here we are going to call the <code>Prism.highlightAll()</code> function inside <code>useEffect()</code> hook. This will highlight our code after the
+Component is rendered.</p>
+<pre><code class="language-jsx">import Prism from &quot;prismjs&quot;; // Prism
+import &quot;prismjs/themes/prism-okaidia.min.css&quot;; // Import theme
+
+require(&quot;prismjs/components/prism-c&quot;);
+require(&quot;prismjs/components/prism-cpp&quot;);
+require(&quot;prismjs/plugins/normalize-whitespace/prism-normalize-whitespace&quot;);
+
+function App() {
+
+  useEffect(() =&gt; {
+    Prism.highlightAll();
+  });
+
+  return (
+    &lt;pre&gt;
+      &lt;code className=&quot;language-cpp&quot;&gt;
+        // Your First C++ Program
+
+        #include &lt;iostream&gt;
+
+        int main() {
+            std::cout &lt;&lt; &quot;Hello World!&quot;;
+            return 0;
+        }
+
+
+      &lt;/code&gt;
+    &lt;/pre&gt;
+  );
+}
+</code></pre>
+<p>And now the rendered App component will have code highlighting enabled</p>
+<p><strong>Note: This process also works on <code>NextJS</code></strong></p>
+</div></div></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"frontmatter":{"title":"How to use PrismJS in ReactJS","date":"January 14, 2023","description":"Today, we are going to see how to use PrismJS in a ReactJS application. It is a very popular syntax highlighting Javascript library. Used in various popular websites to display code.","tags":["web","react"],"cover_image":"./graphics/blog-cover/prismjs.webp"},"content":"\n## Introduction\n\nPrism is a lightweight, extensible syntax highlighter, built with modern web standards in mind. It’s used in millions of websites, including some of those you visit daily\n\n_For more info on PrismJS [Click Here](https://prismjs.com/)_\n\n## Install PrismJS using npm\n\nI assume that your React project is configured correctly. After your React\nproject is up and running. Install PrismJS on the terminal.\n\n```bash\nnpm i prismjs\n```\n\n## After we have installed prismjs we will import\n\n- Language Support\n- Themes\n- Plugins\n\n## Import Prism and Theme in your project\n\nHere we are importing `PrismJS` and the `Theme`.\n\n```javascript\nimport Prism from \"prismjs\"; // Prism\nimport \"prismjs/themes/prism-okaidia.min.css\"; // Import theme\n```\n\nThemes are stored in the `prismjs/themes/` directory. Here are all\nthe possible themes supported by PrismJS.\n\n- prism-coy.min.css\n- prism-dark.min.css\n- prism-funky.min.css\n- prism-okaidia.min.css\n- prism-solarizedlight.min.css\n- prism-tomorrow.min.css\n- prism-twilight.min.css\n\n## Add language support and Plugins\n\nIn order to enable syntax highlighting we need the language from the\n`'prismjs/componenent/'` directory. In this project we are going to highlight C++ code.\n\nWe are going to import plugins from the `prismjs/themes` directory.\n\nAnd we are going to use the `normalize-whitespace` plugin to\nremove all leading and trailing spaces in the code.\n\n```javascript\n// C is required for C++ highlighting to work\nrequire(\"prismjs/components/prism-c\");\n\n// Add language support for C++\nrequire(\"prismjs/components/prism-cpp\");\n\n// To remove extra white spaces\nrequire(\"prismjs/plugins/normalize-whitespace/prism-normalize-whitespace\");\n```\n\nTo see which plugins are supported in PrismJS [Click Here](https://prismjs.com/#plugins)\n\n## How to put code in HTML\n\nAfter we have imported all the required files. We are place your code inside the `pre \u003e code` tags, like the example below. Here, `xxxx` is the name of the language\n\nTo see all the languages supported by PrismJS [Click Here](https://prismjs.com/#supported-languages)\n\n```html\n\u003cpre\u003e\n  \u003ccode className=\"language-xxxx\"\u003e\n    \u003c!-- Your code here --\u003e\n  \u003c/code\u003e\n\u003c/pre\u003e\n```\n\nBut, wait. It is not over yet, the syntax highlighting will not work yet now.\nWe have to call the `Prism.highlighAll()` function to highlight our code\nafter rendering the html.\n\n## Final Code Example\n\nNow the final code. Here we are going to call the `Prism.highlightAll()` function inside `useEffect()` hook. This will highlight our code after the\nComponent is rendered.\n\n```jsx\nimport Prism from \"prismjs\"; // Prism\nimport \"prismjs/themes/prism-okaidia.min.css\"; // Import theme\n\nrequire(\"prismjs/components/prism-c\");\nrequire(\"prismjs/components/prism-cpp\");\nrequire(\"prismjs/plugins/normalize-whitespace/prism-normalize-whitespace\");\n\nfunction App() {\n\n  useEffect(() =\u003e {\n    Prism.highlightAll();\n  });\n\n  return (\n    \u003cpre\u003e\n      \u003ccode className=\"language-cpp\"\u003e\n        // Your First C++ Program\n\n        #include \u003ciostream\u003e\n\n        int main() {\n            std::cout \u003c\u003c \"Hello World!\";\n            return 0;\n        }\n\n\n      \u003c/code\u003e\n    \u003c/pre\u003e\n  );\n}\n```\n\nAnd now the rendered App component will have code highlighting enabled\n\n**Note: This process also works on `NextJS`**\n","slug":"how-to-use-prismjs-in-react-js"},"__N_SSG":true},"page":"/blog/[slug]","query":{"slug":"how-to-use-prismjs-in-react-js"},"buildId":"paAti74gkAgpi7pyziL7j","assetPrefix":"/artaza","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>
