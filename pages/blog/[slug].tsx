@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import Prism from "prismjs";
 import fs from "fs";
 import path from "path";
@@ -42,6 +44,9 @@ export default function PostPage({
   }, []);
   return (
     <>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <main className={roboto.className}>
         <div className={styles.blog_page_wrapper}>
           <div className={styles.blog_page}>
@@ -60,10 +65,10 @@ export default function PostPage({
               </div>
             </div>
 
-            <div
+            <article
               className={styles.post_content}
               dangerouslySetInnerHTML={{ __html: marked(content) }}
-            ></div>
+            ></article>
           </div>
         </div>
       </main>
