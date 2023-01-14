@@ -55,7 +55,7 @@ the possible themes supported by PrismJS.
 In order to enable syntax highlighting we need the language from the
 `'prismjs/componenent/'` directory. In this project we are going to highlight C++ code.
 
-We are going to import plugins from the `prismjs/themes` directory.
+We are going to import plugins from the `prismjs/plugins` directory.
 
 And we are going to use the `normalize-whitespace` plugin to
 remove all leading and trailing spaces in the code.
