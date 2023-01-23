@@ -19,7 +19,7 @@ export default function Project({
   return (
     <div className={styles.project}>
       <div className={styles.project_info}>
-        <Link href={link}>
+        <Link href={link} target="blank_">
           <div className={styles.project_name}>{name}</div>
         </Link>
         <div className={styles.project_links}>
@@ -28,7 +28,11 @@ export default function Project({
               <span className={styles.project_code_link_title}>
                 Code Link:{" "}
               </span>
-              <Link className={styles.project_code_link} href={codeLink}>
+              <Link
+                className={styles.project_code_link}
+                href={codeLink}
+                target="blank_"
+              >
                 {codeLink}
               </Link>
             </>
@@ -41,7 +45,11 @@ export default function Project({
               <span className={styles.project_deploy_link_title}>
                 Deploy Link:
               </span>
-              <Link className={styles.project_deploy_link} href={deployLink}>
+              <Link
+                className={styles.project_deploy_link}
+                href={deployLink}
+                target="blank_"
+              >
                 {deployLink}
               </Link>
             </>

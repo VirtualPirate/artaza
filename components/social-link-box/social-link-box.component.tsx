@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from "./social-link-box.module.css";
 
 type SocialLinkBoxProps = {
@@ -8,7 +10,7 @@ type SocialLinkBoxProps = {
 
 export default function SocialLinkBox({ href, src, name }: SocialLinkBoxProps) {
   return (
-    <a href={href}>
+    <Link href={href} target="blank_">
       <div className={styles.footer_social}>
         <span className={styles.footer_social_logo_wrapper}>
           <img
@@ -19,6 +21,6 @@ export default function SocialLinkBox({ href, src, name }: SocialLinkBoxProps) {
         </span>
         <span> {name}</span>
       </div>
-    </a>
+    </Link>
   );
 }
