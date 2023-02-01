@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 import Prism from "prismjs";
 import fs from "fs";
@@ -47,6 +48,9 @@ export default function PostPage({
       <Head>
         <title>{title}</title>
       </Head>
+      <Link href="/blog">
+        <button className={styles.back_button}>&#10140;</button>
+      </Link>
       <main className={roboto.className}>
         <div className={styles.blog_page_wrapper}>
           <div className={styles.blog_page}>
