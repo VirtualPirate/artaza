@@ -12,6 +12,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <meta
+          name="google-site-verification"
+          content="kpbWRIhynKBS8mLaEpmMxE8cHsKNrjQmoMV7gS0lCps"
+        />
         <base href={basePath + "/"} />
         <title> Artaza Portfolio </title>
       </Head>
