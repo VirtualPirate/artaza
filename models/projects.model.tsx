@@ -21,6 +21,13 @@ const projects: Array<ProjectType> = [
   },
 
   {
+    name: "OpenGraph API",
+    codeLink: "https://github.com/VirtualPirate/OpenGraph-API",
+    deployLink: "",
+    createdUsing: ["javascript"],
+  },
+
+  {
     name: "YOUTUBE DOWNLOADER ( GUI )",
     codeLink: "https://github.com/VirtualPirate/YoutubeDownloader",
     deployLink:
