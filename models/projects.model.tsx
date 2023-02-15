@@ -28,6 +28,13 @@ const projects: Array<ProjectType> = [
   },
 
   {
+    name: "ZOCKET (Company Assignment)",
+    codeLink: "https://github.com/VirtualPirate/zocket",
+    deployLink: "https://zocket.pages.dev",
+    createdUsing: ["reactjs"],
+  },
+
+  {
     name: "YOUTUBE DOWNLOADER ( GUI )",
     codeLink: "https://github.com/VirtualPirate/YoutubeDownloader",
     deployLink:
