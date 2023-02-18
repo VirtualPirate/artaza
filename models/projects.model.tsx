@@ -21,6 +21,13 @@ const projects: Array<ProjectType> = [
   },
 
   {
+    name: "ZOCKET (Company Assignment)",
+    codeLink: "https://github.com/VirtualPirate/zocket",
+    deployLink: "https://zocket.pages.dev",
+    createdUsing: ["reactjs"],
+  },
+
+  {
     name: "OpenGraph API",
     codeLink: "https://github.com/VirtualPirate/OpenGraph-API",
     deployLink: "",
@@ -28,10 +35,10 @@ const projects: Array<ProjectType> = [
   },
 
   {
-    name: "ZOCKET (Company Assignment)",
-    codeLink: "https://github.com/VirtualPirate/zocket",
-    deployLink: "https://zocket.pages.dev",
-    createdUsing: ["reactjs"],
+    name: "Algebra API",
+    codeLink: "https://github.com/VirtualPirate/Algebra-API",
+    deployLink: "https://algebraapi.onrender.com/",
+    createdUsing: ["javascript", "cpp"],
   },
 
   {
