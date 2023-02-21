@@ -22,9 +22,10 @@ export default function IntroductionSection() {
           className={`${styles.intro_content} left-slide-anim transition-delay-200`}
         >
           I am a self taught programmer. Currently a Web Developer as a career
-          path. I&apos;ve programming experience of over 5 Years. I started at
-          the early age 14. Fascinated by computer technology. Since, then I
-          have never stopped learning.
+          path. I&apos;ve web development experience of over 1+ Years. And
+          programming experience of 5 years. I started at the early age 14.
+          Fascinated by computer technology. Since, then I have never stopped
+          learning.
         </p>
       </div>
     </section>
