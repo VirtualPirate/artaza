@@ -10,6 +10,8 @@ const skills: Array<SkillType> = [
   { name: "Javascript", logo: "javascript.svg", skillLevel: 4 },
   { name: "Typescript", logo: "typescript.svg", skillLevel: 3 },
   { name: "ReactJS", logo: "reactjs.svg", skillLevel: 3 },
+  { name: "NextJS", logo: "nextjs.svg", skillLevel: 3 },
+  { name: "MongoDB", logo: "mongodb.svg", skillLevel: 3 },
   { name: "WebAssembly", logo: "webassembly.svg", skillLevel: 3 },
   { name: "Web Components", logo: "webcomponent.svg", skillLevel: 4 },
   { name: "git", logo: "git-bash.svg", skillLevel: 4 },
@@ -18,7 +20,6 @@ const skills: Array<SkillType> = [
   { name: "Kotln", logo: "kotlin.svg", skillLevel: 3 },
   { name: "C++", logo: "cpp.svg", skillLevel: 4 },
   { name: "C", logo: "c.svg", skillLevel: 4 },
-  { name: "NextJS", logo: "nextjs.svg", skillLevel: 3 },
 ];
 
 export default skills;
