@@ -38,7 +38,7 @@ const projects: Array<ProjectType> = [
     name: "OpenGraph API",
     codeLink: "https://github.com/VirtualPirate/OpenGraph-API",
     deployLink: "https://opengraph.cyclic.app/",
-    createdUsing: ["javascript"],
+    createdUsing: ["javascript", "mongodb"],
   },
 
   {
