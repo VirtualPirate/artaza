@@ -20,6 +20,7 @@ const skills: Array<SkillType> = [
   { name: "Kotln", logo: "kotlin.svg", skillLevel: 3 },
   { name: "C++", logo: "cpp.svg", skillLevel: 4 },
   { name: "C", logo: "c.svg", skillLevel: 4 },
+  { name: "FIrebase", logo: "firebase.svg", skillLevel: 2 },
 ];
 
 export default skills;

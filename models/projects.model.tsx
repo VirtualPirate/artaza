@@ -31,7 +31,7 @@ const projects: Array<ProjectType> = [
     name: "Crown Store Clothing",
     codeLink: "https://github.com/VirtualPirate/Crown_Store",
     deployLink: "https://store132.netlify.app",
-    createdUsing: ["reactjs"],
+    createdUsing: ["reactjs", "firebase"],
   },
 
   {
