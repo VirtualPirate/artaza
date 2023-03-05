@@ -10,7 +10,7 @@ const projects: Array<ProjectType> = [
     name: "AZCreation (CLIENT PAGE)",
     codeLink: "https://github.com/VirtualPirate/azcreation",
     deployLink: "https://azcreation.pages.dev/",
-    createdUsing: ["html", "css", "typescript", "nextjs"],
+    createdUsing: ["typescript", "nextjs"],
   },
 
   {
@@ -32,6 +32,13 @@ const projects: Array<ProjectType> = [
     codeLink: "https://github.com/VirtualPirate/Crown_Store",
     deployLink: "https://store132.netlify.app",
     createdUsing: ["reactjs", "firebase"],
+  },
+
+  {
+    name: "OpenGraph Viewer",
+    codeLink: "https://github.com/VirtualPirate/OpenGraph-Viewer",
+    deployLink: "https://opengraph-viewer.netlify.app/",
+    createdUsing: ["reactjs"],
   },
 
   {
