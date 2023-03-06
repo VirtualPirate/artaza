@@ -1,15 +1,26 @@
+import { useEffect } from "react";
 import IntroductionSectionSvg from "./introduction-section-svg.component";
 
 import styles from "./introduction-section.module.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function IntroductionSection() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className={styles.introduction_section}>
       <IntroductionSectionSvg></IntroductionSectionSvg>
       <div className={styles.intro_wrapper}>
         <div className={styles.intro_text_wrapper}>
           <p
-            className={`${styles.intro_text} left-slide-anim transition-delay-100`}
+            className={styles.intro_text}
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="100"
           >
             <span>Hi, I am </span>
             <span className={styles.web_developer_tag}> web developer </span>
@@ -19,7 +30,10 @@ export default function IntroductionSection() {
         </div>
 
         <p
-          className={`${styles.intro_content} left-slide-anim transition-delay-200`}
+          className={styles.intro_content}
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
         >
           I am a self taught programmer. Currently a Web Developer as a career
           path. I&apos;ve web development experience of over 1+ Years. And
