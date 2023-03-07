@@ -11,7 +11,7 @@ description:
 tags:
   - reactjs
   - nextjs
-cover_image: ./graphics/nextjs-png.png
+cover_image: ./graphics/blog-cover/nextjs-png.png
 ---
 
 # Welcome to StackEdit!

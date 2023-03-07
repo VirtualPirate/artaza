@@ -12,7 +12,7 @@ tags:
   - web
   - c++
   - wasm
-cover_image: ./graphics/cmake_wasm.png
+cover_image: ./graphics/blog-cover/cmake_wasm.png
 ---
 
 # Introduction

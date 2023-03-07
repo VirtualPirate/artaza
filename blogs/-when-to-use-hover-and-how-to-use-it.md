@@ -10,7 +10,7 @@ description:
 
 tags:
   - css
-cover_image: ./graphics/css-png.png
+cover_image: ./graphics/blog-cover/css-png.png
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
