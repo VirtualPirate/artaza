@@ -1,6 +1,11 @@
 import styles from "./project.module.css";
 import Link from "next/link";
 
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 type ProjectProps = {
   name: string;
   codeLink: string;
@@ -16,8 +21,12 @@ export default function Project({
 }: ProjectProps) {
   const link = deployLink !== "" ? deployLink : codeLink;
 
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
+
   return (
-    <div className={styles.project}>
+    <div className={styles.project} data-aos="zoom-in" data-aos-duration="1000">
       <div className={styles.project_info}>
         <Link href={link} target="blank_">
           <div className={styles.project_name}>{name}</div>
@@ -65,6 +74,9 @@ export default function Project({
               className={styles.created_using_logo}
               src={`./graphics/skillset/${skill}.svg`}
               key={index}
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-duration="1000"
             />
           ))}
         </div>
