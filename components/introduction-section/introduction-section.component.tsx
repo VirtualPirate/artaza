@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 export default function IntroductionSection() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
@@ -21,6 +21,7 @@ export default function IntroductionSection() {
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="100"
+            data-aos-once="true"
           >
             <span>Hi, I am </span>
             <span className={styles.web_developer_tag}> web developer </span>
@@ -34,6 +35,7 @@ export default function IntroductionSection() {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="200"
+          data-aos-once="true"
         >
           I am a self taught programmer. Currently a Web Developer as a career
           path. I&apos;ve web development experience of over 1+ Years. And

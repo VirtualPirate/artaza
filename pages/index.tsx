@@ -6,6 +6,10 @@ import IntroductionSection from "../components/introduction-section/introduction
 import SpecialitySection from "../components/speciality-section/speciality-section.component";
 import Footer from "../components/footer/footer.component";
 
+import SectionHeading from "../components/section-heading/section-heading.component";
+import ProjectInfo from "../components/project-info/project-info.component";
+import ProjectInfoList from "../components/project-info-list/project-info-list.component";
+
 export default function Home() {
   return (
     <>
@@ -13,6 +17,11 @@ export default function Home() {
       <main>
         <IntroductionSection></IntroductionSection>
         <SpecialitySection></SpecialitySection>
+
+        <SectionHeading name="PROJECTS" />
+
+        <ProjectInfoList />
+
         <Footer></Footer>
       </main>
     </>

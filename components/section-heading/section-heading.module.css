@@ -1,0 +1,8 @@
+.heading {
+  background-image: url(../../public/graphics/heading_ellipse.svg);
+  background-size: 100% 100%;
+  transform-origin: 50%;
+  margin-top: 5rem;
+
+  text-align: center;
+}

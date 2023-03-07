@@ -8,6 +8,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-family: Poppins;
   position: relative;
+
+  overflow-x: hidden;
 }
 
 a {

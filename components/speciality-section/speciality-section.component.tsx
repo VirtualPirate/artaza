@@ -8,16 +8,26 @@ import "aos/dist/aos.css";
 
 export default function SpecialitySection() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({ once: true });
   }, []);
 
   return (
     <section className={styles.speciality_section}>
       <div className={styles.service_intro_content_text}>
-        <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+        <h2
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+          data-aos-once="true"
+        >
           RESPONSIVE & ANIMATIONS
         </h2>
-        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
           Not only do I create websites but websites which looks excellent in
           various devices and with professional looking
           <span> Animations</span> and <span>Responsiveness</span> . Creating
