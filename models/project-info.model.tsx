@@ -26,8 +26,17 @@ const projects: Array<ProjectInfoType> = [
   },
 
   {
+    image: "./graphics/project/youtubedownloader_web.png",
+    name: "YOUTUBE DOWNLOADER (WEB)",
+    description:
+      "A Youtube video and audio downloder, created on the web using Svelte. I created a backend for parsing youtube video data",
+    visitLink: "https://tube-download.netlify.app/",
+    codeLink: "",
+  },
+
+  {
     image: "./graphics/project/youtube_downloader.png",
-    name: "YOUTUBE DOWNLOADER",
+    name: "YOUTUBE DOWNLOADER (DESKTOP)",
     description:
       "This is an GUI application created using Python. It is a Youtube Downloader. That can download Youtube Playlists. This application is created using the Tkinter GUI library",
     visitLink:

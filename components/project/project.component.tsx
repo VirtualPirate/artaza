@@ -75,7 +75,7 @@ export default function Project({
               src={`./graphics/skillset/${skill}.svg`}
               key={index}
               data-aos="zoom-in"
-              data-aos-delay="500"
+              data-aos-delay="300"
               data-aos-duration="1000"
             />
           ))}
