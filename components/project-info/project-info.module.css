@@ -63,11 +63,14 @@
 }
 
 @media (max-width: 800px) {
+  .info {
+    width: 100%;
+  }
   .image {
-    width: 80vw;
+    width: 100%;
   }
 
   .project_info {
-    width: 80vw;
+    width: 100%;
   }
 }
