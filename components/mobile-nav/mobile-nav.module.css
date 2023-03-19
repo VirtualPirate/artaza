@@ -41,8 +41,8 @@
 
 .side_nav_sticky {
   position: sticky;
-  /* height: 100vh; */
-  /* top: 0; */
+  height: 100vh;
+  top: 0%;
 }
 
 .close_side_nav_btn {
