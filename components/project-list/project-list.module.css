@@ -34,7 +34,7 @@
 @media (max-width: 1000px) {
   .projects_heading {
     position: static;
-    font-size: 4vw;
+    font-size: 30px;
   }
 }
 

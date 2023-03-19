@@ -111,13 +111,9 @@ ul li {
   }
 }
 
-@media (max-width: 600px) {
-  body {
-    /* overflow-x: unset; */
-    /* width: 100vw; */
-  }
+.aos-init:not(.aos-animate):after {
+  position: fixed;
 }
-
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

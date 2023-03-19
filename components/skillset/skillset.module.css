@@ -43,10 +43,11 @@
   .skillset {
     padding: 0 0 8vw 0;
     gap: 0;
+    margin: 0;
   }
   .skillset_heading {
     position: static;
-    font-size: 5vw;
+    font-size: 30px;
   }
   .skillset_content_wrapper {
     padding-top: 3vw;
