@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-html,
+html {
+  padding: 0;
+  margin: 0;
+}
 body {
   padding: 0;
   margin: 0;
@@ -110,7 +113,8 @@ ul li {
 
 @media (max-width: 600px) {
   body {
-    overflow-x: unset;
+    /* overflow-x: unset; */
+    /* width: 100vw; */
   }
 }
 

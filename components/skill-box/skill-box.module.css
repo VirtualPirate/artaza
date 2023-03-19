@@ -86,7 +86,7 @@
 
 .skill_meter {
   transform-origin: 0% 50%;
-  border-radius: 100vw;
+  border-radius: 1000px;
   scale: 0 1;
   height: 100%;
   animation: skill-meter-anim 2s ease-out forwards;

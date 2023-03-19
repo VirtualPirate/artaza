@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="./graphics/artaza-logo.svg" />
       </Head>
-      <body className="red-theme">
+      <body>
         <Main />
         <NextScript />
       </body>
