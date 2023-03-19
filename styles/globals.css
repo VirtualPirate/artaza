@@ -108,6 +108,12 @@ ul li {
   }
 }
 
+@media (max-width: 600px) {
+  body {
+    overflow-x: unset;
+  }
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
