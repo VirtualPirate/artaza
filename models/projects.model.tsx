@@ -21,6 +21,20 @@ const projects: Array<ProjectType> = [
   },
 
   {
+    name: "Tube Downloader",
+    codeLink: "https://github.com/VirtualPirate/YoutubeDownloader-Svelte-Web",
+    deployLink: "https://tube-download.netlify.app/",
+    createdUsing: ["svelte"],
+  },
+
+  {
+    name: "Relative Dashboard",
+    codeLink: "https://github.com/VirtualPirate/RelativeAssets-Page",
+    deployLink: "https://relative-assets.netlify.app/",
+    createdUsing: ["reactjs", "typescript", "tailwind"],
+  },
+
+  {
     name: "ZOCKET (Company Assignment)",
     codeLink: "https://github.com/VirtualPirate/zocket",
     deployLink: "https://zocket.pages.dev",

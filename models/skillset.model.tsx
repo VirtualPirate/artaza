@@ -22,7 +22,8 @@ const skills: Array<SkillType> = [
   { name: "Rust", logo: "rust.svg", skillLevel: 1 },
   { name: "C++", logo: "cpp.svg", skillLevel: 4 },
   { name: "C", logo: "c.svg", skillLevel: 4 },
-  { name: "FIrebase", logo: "firebase.svg", skillLevel: 2 },
+  { name: "Firebase", logo: "firebase.svg", skillLevel: 2 },
+  { name: "Tailwind CSS", logo: "tailwind.svg", skillLevel: 4 },
 ];
 
 export default skills;
