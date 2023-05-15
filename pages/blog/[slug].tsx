@@ -39,7 +39,7 @@ type PostPageProps = {
 };
 
 export default function PostPage({
-  frontmatter: { title, date, description, tags, cover_image },
+  frontmatter: { title, date, description, tags, cover_image, og_image },
   content,
   slug,
 }: PostPageProps) {
@@ -58,7 +58,7 @@ export default function PostPage({
       <SEO
         title={title}
         description={description}
-        imageSrc={cover_image}
+        imageSrc={og_image}
         keywords={[]}
       />
       <Link href="/blog">

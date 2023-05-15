@@ -8,6 +8,7 @@ tags:
   - web scraping
 
 cover_image: ./graphics/blog-cover/nodejs_puppeteer_reel.png
+og_image: https://artaza.in/graphics/blog-cover/nodejs_puppeteer_reel.png
 ---
 
 ## Introduction

@@ -8,6 +8,7 @@ export type FrontmatterType = {
   description: string;
   tags: Array<string>;
   cover_image: string;
+  og_image: string;
 };
 
 export type BlogPostType = {

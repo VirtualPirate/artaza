@@ -7,6 +7,7 @@ tags:
   - web
   - react
 cover_image: ./graphics/blog-cover/prismjs.webp
+og_image: https://artaza.in/graphics/blog-cover/prismjs.webp
 ---
 
 ## Introduction
