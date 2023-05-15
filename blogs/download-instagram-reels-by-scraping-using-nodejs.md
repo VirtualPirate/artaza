@@ -17,7 +17,7 @@ Today, we are going to use web scraping in NodeJS to extract direct download lin
 
 ## Install Required NPM Packages
 
-**`Puppeteer`** : Puppeterr is a Node.js library which provides a high-level APU to control Chrome/Chromium ( Browser )
+**`Puppeteer`** : Puppeteer is a Node.js library which provides a high-level API to control Chrome/Chromium ( Browser )
 
 **`Cheerio`** : Cheerio is a HTML DOM parser and helps us traverse raw HTML and XML
 
@@ -97,4 +97,6 @@ getReelVideo("https://www.instagram.com/reel/CrQ9TvAAuRe/").then((link) =>
 
 **Output:**
 
-`https://instagram.fccu19-1.fna.fbcdn.net/v/t66.30100-16/120641351_1702239160229021_7989127058867652451_n.mp4?_nc_ht=instagram.fccu19-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=QoyEWM5tB-AAX_8SGz5&edm=AP_V10EBAAAA&ccb=7-5&oh=00_AfAU1hwxYlztdGfqHxpNxyTBDCOzNnLwBw7KnEdj7dLAuw&oe=6463ADB1&_nc_sid=4f375e`
+```bash
+https://instagram.fccu19-1.fna.fbcdn.net/v/t66.30100-16/120641351_1702239160229021_7989127058867652451_n.mp4?_nc_ht=instagram.fccu19-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=QoyEWM5tB-AAX_8SGz5&edm=AP_V10EBAAAA&ccb=7-5&oh=00_AfAU1hwxYlztdGfqHxpNxyTBDCOzNnLwBw7KnEdj7dLAuw&oe=6463ADB1&_nc_sid=4f375e
+```
