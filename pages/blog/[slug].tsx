@@ -17,6 +17,8 @@ require("prismjs/plugins/normalize-whitespace/prism-normalize-whitespace");
 import type { FrontmatterType } from ".";
 import { useEffect } from "react";
 
+import SEO from "../../components/seo";
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -45,9 +47,12 @@ export default function PostPage({
   }, []);
   return (
     <>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      <SEO
+        title={title}
+        description={description}
+        imageSrc={cover_image}
+        keywords={[]}
+      />
       <Link href="/blog">
         <button className={styles.back_button}>&#10140;</button>
       </Link>
