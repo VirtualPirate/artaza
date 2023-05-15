@@ -24,6 +24,14 @@ const roboto = Roboto({
   weight: ["400", "700"],
 });
 
+marked.use({
+  renderer: {
+    image: (href, title, text) => {
+      return `<img src="${href}" alt="${text}" title="${title}" style="width: 100%;">`;
+    },
+  },
+});
+
 type PostPageProps = {
   frontmatter: FrontmatterType;
   content: string;
