@@ -38,7 +38,7 @@ const projects: Array<ProjectInfoType> = [
     image: "./graphics/project/youtube_downloader.png",
     name: "YOUTUBE DOWNLOADER (DESKTOP)",
     description:
-      "This is an GUI application created using Python. It is a Youtube Downloader. That can download Youtube Playlists. This application is created using the Tkinter GUI library",
+      "This is a GUI application created using Python. It is a Youtube Downloader. That can download Youtube Playlists. This application is created using the Tkinter GUI library",
     visitLink:
       "https://drive.google.com/file/d/1InSBP4TOUZFThS83EKHaWgjCB69fdW31/view",
     codeLink: "",
